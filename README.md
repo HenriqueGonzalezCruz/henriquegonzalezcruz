@@ -1,16 +1,123 @@
-## Hi there 👋
+<!-- ===================== BANNER ===================== -->
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:E10600,100:0B0B0B&height=230&section=header&text=Henrique%20Gonzalez&fontSize=52&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Pit%20Stop%20de%20c%C3%B3digo&descSize=22&descAlignY=60" alt="Banner Henrique Gonzalez" />
+
+<!-- ===================== FRASES DIGITANDO ===================== -->
+<a href="https://github.com/HenriqueGonzalezCruz">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1500&color=E10600&center=true&vCenter=true&width=720&lines=Sempre+buscando+fazer+projetos+divertidos;Procurando+sempre+evoluir+os+conhecimentos;Sempre+curioso+em+descobrir+como+sistemas+podem+ser+burlados%2C+para+proteg%C3%AA-los" alt="Frases digitando" />
+</a>
+
+</div>
+
+<br>
+
+## 🏁 Largada
+
+Fala, pessoal! Eu sou o **Henrique** 👋
+
+- 🎓 Estudo **Análise e Desenvolvimento de Sistemas** na **FATEC São Caetano do Sul** e **Ciência da Computação** na **USCS**
+- ⚙️ Tenho base técnica em **Mecatrônica** pelo **SENAI**, então gosto de entender como as coisas funcionam de ponta a ponta
+- 🏎️ Cheguei à **etapa nacional da F1 in Schools**, e levo a mesma pegada de equipe e velocidade para o código
+- 🔐 Sou curioso por **cibersegurança** e por entender como os sistemas podem falhar (para aprender a protegê-los)
+- 🚀 Estou em busca de uma oportunidade de **estágio em TI** na região do Grande ABC
+
+<br>
+
+## 📻 Rádio de equipe
+
+<div align="center">
+
+<a href="https://www.linkedin.com/in/henrique-gonzalez-cruz-4767b231b"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+<a href="https://www.instagram.com/malc0w"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" /></a>
+<a href="mailto:henriquegonzalezcruz876@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" /></a>
+
+</div>
+
+<br>
+
+## 🔧 Garagem
+
+<div align="center">
+
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![VB.NET](https://img.shields.io/badge/VB.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
+
+</div>
+
+<br>
+
+## 🏎️ Pole Position: o grid de repositórios
+
+<div align="center">
+
+![Carros no grid](https://img.shields.io/badge/dynamic/json?label=carros%20no%20grid&query=%24.public_repos&url=https%3A%2F%2Fapi.github.com%2Fusers%2FHenriqueGonzalezCruz&style=for-the-badge&color=E10600&logo=github&logoColor=white)
+
+```text
+ 🏁 ═══════════════ LARGADA ═══════════════ 🏁
+
+
+ Grid pequeno por enquanto, mas todo mundo
+ com o motor ligado e pronto pra acelerar!
+```
+
+</div>
+
+> 🔧 Cada repositório novo vira um carro novo no grid. É só adicionar mais um 🏎️💨 na pista acima quando eu publicar outro projeto.
+
+<br>
+
+## 📡 Telemetria
+
+<div align="center">
+
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=HenriqueGonzalezCruz&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=E10600&icon_color=E10600" alt="Estatísticas do GitHub" />
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=HenriqueGonzalezCruz&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=E10600" alt="Linguagens mais usadas" />
+
+<br>
+
+<img src="https://streak-stats.demolab.com?user=HenriqueGonzalezCruz&theme=radical&hide_border=true&background=0D1117&ring=E10600&fire=E10600&currStreakLabel=E10600" alt="Sequência de commits" />
+
+<br>
+
+<img src="https://github-profile-trophy.vercel.app/?username=HenriqueGonzalezCruz&theme=radical&no-frame=true&row=1&margin-w=10" alt="Troféus" />
+
+</div>
+
+<br>
+
+## 🐍 Cobrinha na pista
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/HenriqueGonzalezCruz/henriquegonzalezcruz/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/HenriqueGonzalezCruz/henriquegonzalezcruz/output/github-snake.svg" />
+  <img alt="Cobrinha comendo as contribuições" src="https://raw.githubusercontent.com/HenriqueGonzalezCruz/henriquegonzalezcruz/output/github-snake-dark.svg" />
+</picture>
+
+</div>
+
+<br>
+
+## 🎧 Som do box
 
 <!--
-**HenriqueGonzalezCruz/henriquegonzalezcruz** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+  PARA ATIVAR O SPOTIFY:
+  1. Acesse https://spotify-github-profile.vercel.app e faça login com a sua conta do Spotify.
+  2. Copie o link da imagem que o site gerar (ele já traz o seu ID).
+  3. Apague as marcas de comentário desta caixa e cole o seu link no lugar de SEU_LINK_AQUI.
 
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
+<div align="center">
+  <img src="SEU_LINK_AQUI" alt="Tocando agora no Spotify" />
+</div>
 -->
+
+<div align="center">
+
+*Em breve: o que estou ouvindo no momento.*
+
+</div>
