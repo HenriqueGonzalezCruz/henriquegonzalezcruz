@@ -106,7 +106,7 @@ Fala, pessoal! Eu sou o **Henrique** 👋
 ## 🎧 Som do box
 
 <div align="center">
-  <img src="[![spotify-github-profile](https://spotify-github-profile.kittinanx.com/api/view?uid=31fyp6eqypcrry3m3jfzuit3ourm&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=false&profanity=false&hide_remaster=false)](https://github.com/kittinan/spotify-github-profile)" alt="Tocando agora no Spotify" />
+  <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=31fyp6eqypcrry3m3jfzuit3ourm&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=false&profanity=false&hide_remaster=false)](https://github.com/kittinan/spotify-github-profile" alt="Tocando agora no Spotify" />
 </div>
 
 
