@@ -105,16 +105,10 @@ Fala, pessoal! Eu sou o **Henrique** 👋
 
 ## 🎧 Som do box
 
-<!--
-  PARA ATIVAR O SPOTIFY:
-  1. Acesse https://spotify-github-profile.vercel.app e faça login com a sua conta do Spotify.
-  2. Copie o link da imagem que o site gerar (ele já traz o seu ID).
-  3. Apague as marcas de comentário desta caixa e cole o seu link no lugar de SEU_LINK_AQUI.
-
 <div align="center">
-  <img src="SEU_LINK_AQUI" alt="Tocando agora no Spotify" />
+  <img src="[![spotify-github-profile](https://spotify-github-profile.kittinanx.com/api/view?uid=31fyp6eqypcrry3m3jfzuit3ourm&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=false&profanity=false&hide_remaster=false)](https://github.com/kittinan/spotify-github-profile)" alt="Tocando agora no Spotify" />
 </div>
--->
+
 
 <div align="center">
 
