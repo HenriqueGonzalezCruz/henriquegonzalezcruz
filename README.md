@@ -1,7 +1,7 @@
 <!-- ===================== BANNER ===================== -->
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:E10600,100:0B0B0B&height=230&section=header&text=Henrique%20Gonzalez&fontSize=52&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Pit%20Stop%20de%20c%C3%B3digo&descSize=22&descAlignY=60" alt="Banner Henrique Gonzalez" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:E10600,100:0B0B0B&height=230&section=header&text=Henrique%20Gonzalez&fontSize=52&fontColor=ffffff&animation=fadeIn&fontAlignY=38" alt="Banner Henrique Gonzalez" />
 
 <!-- ===================== FRASES DIGITANDO ===================== -->
 <a href="https://github.com/HenriqueGonzalezCruz">
@@ -13,10 +13,11 @@
 <br>
 
 
-Fala, pessoal! Eu sou o **Henrique**, só mais um DEV no planeta buscando sua glória
+<div align="center"><h3>Fala, pessoal! Eu sou o Henrique, só mais um DEV no planeta buscando sua glória 💪</h3></div>
 
 <br>
 
+<div align="center"><h4>Redes Sociais</h4></div>
 
 <div align="center">
 
@@ -28,7 +29,8 @@ Fala, pessoal! Eu sou o **Henrique**, só mais um DEV no planeta buscando sua gl
 
 <br>
 
-<br>
+<div align="center"><h4>Atualmente familiarizado com:</h4></div>
+
 
 <div align="center">
 
@@ -43,7 +45,7 @@ Fala, pessoal! Eu sou o **Henrique**, só mais um DEV no planeta buscando sua gl
 
 <div align="center">
 
-![Repositórios](https://img.shields.io/badge/dynamic/json?label=carros%20no%20grid&query=%24.public_repos&url=https%3A%2F%2Fapi.github.com%2Fusers%2FHenriqueGonzalezCruz&style=for-the-badge&color=E10600&logo=github&logoColor=white)
+![Repositórios](https://img.shields.io/badge/dynamic/json?label=reposit%C3%B3rios&query=%24.public_repos&url=https%3A%2F%2Fapi.github.com%2Fusers%2FHenriqueGonzalezCruz&style=for-the-badge&color=E10600&logo=github&logoColor=white)
 
 </div>
 
