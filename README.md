@@ -12,19 +12,11 @@
 
 <br>
 
-## 🏁 Largada
 
-Fala, pessoal! Eu sou o **Henrique** 👋
-
-- 🎓 Estudo **Análise e Desenvolvimento de Sistemas** na **FATEC São Caetano do Sul** e **Ciência da Computação** na **USCS**
-- ⚙️ Tenho base técnica em **Mecatrônica** pelo **SENAI**, então gosto de entender como as coisas funcionam de ponta a ponta
-- 🏎️ Cheguei à **etapa nacional da F1 in Schools**, e levo a mesma pegada de equipe e velocidade para o código
-- 🔐 Sou curioso por **cibersegurança** e por entender como os sistemas podem falhar (para aprender a protegê-los)
-- 🚀 Estou em busca de uma oportunidade de **estágio em TI** na região do Grande ABC
+Fala, pessoal! Eu sou o **Henrique**, só mais um DEV no planeta buscando sua glória
 
 <br>
 
-## 📻 Rádio de equipe
 
 <div align="center">
 
@@ -36,7 +28,7 @@ Fala, pessoal! Eu sou o **Henrique** 👋
 
 <br>
 
-## 🔧 Garagem
+<br>
 
 <div align="center">
 
@@ -47,30 +39,17 @@ Fala, pessoal! Eu sou o **Henrique** 👋
 ![VB.NET](https://img.shields.io/badge/VB.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
 
 </div>
-
 <br>
-
-## 🏎️ Pole Position: o grid de repositórios
 
 <div align="center">
 
-![Carros no grid](https://img.shields.io/badge/dynamic/json?label=carros%20no%20grid&query=%24.public_repos&url=https%3A%2F%2Fapi.github.com%2Fusers%2FHenriqueGonzalezCruz&style=for-the-badge&color=E10600&logo=github&logoColor=white)
-
-```text
- 🏁 ═══════════════ LARGADA ═══════════════ 🏁
-
-
- Grid pequeno por enquanto, mas todo mundo
- com o motor ligado e pronto pra acelerar!
-```
+![Repositórios](https://img.shields.io/badge/dynamic/json?label=carros%20no%20grid&query=%24.public_repos&url=https%3A%2F%2Fapi.github.com%2Fusers%2FHenriqueGonzalezCruz&style=for-the-badge&color=E10600&logo=github&logoColor=white)
 
 </div>
 
-> 🔧 Cada repositório novo vira um carro novo no grid. É só adicionar mais um 🏎️💨 na pista acima quando eu publicar outro projeto.
 
 <br>
 
-## 📡 Telemetria
 
 <div align="center">
 
@@ -83,13 +62,12 @@ Fala, pessoal! Eu sou o **Henrique** 👋
 
 <br>
 
-<img src="https://github-profile-trophy.vercel.app/?username=HenriqueGonzalezCruz&theme=radical&no-frame=true&row=1&margin-w=10" alt="Troféus" />
+
 
 </div>
 
 <br>
 
-## 🐍 Cobrinha na pista
 
 <div align="center">
 
@@ -103,7 +81,7 @@ Fala, pessoal! Eu sou o **Henrique** 👋
 
 <br>
 
-## 🎧 Som do box
+## Som do box
 
 <div align="center">
   <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=31fyp6eqypcrry3m3jfzuit3ourm&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=false&profanity=false&hide_remaster=false)](https://github.com/kittinan/spotify-github-profile" alt="Tocando agora no Spotify" />
