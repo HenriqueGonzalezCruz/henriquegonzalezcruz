@@ -92,6 +92,4 @@
 
 <div align="center">
 
-*Em breve: o que estou ouvindo no momento.*
-
 </div>
