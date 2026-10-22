@@ -86,7 +86,7 @@
 ## Som do box
 
 <div align="center">
-  <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=31fyp6eqypcrry3m3jfzuit3ourm&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=false&profanity=false&hide_remaster=false)](https://github.com/kittinan/spotify-github-profile" alt="Tocando agora no Spotify" />
+  <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=w0y5aj9se3m1plcck0lmn5w0i&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=false&profanity=false&hide_remaster=false&bar_color=ff0505)](https://github.com/kittinan/spotify-github-profile" alt="Tocando agora no Spotify" />
 </div>
 
 
