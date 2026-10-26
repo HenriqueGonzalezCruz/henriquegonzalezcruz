@@ -1,0 +1,36 @@
+name: Gerar cobrinha
+
+on:
+  # atualiza a cada 12 horas
+  schedule:
+    - cron: "0 */12 * * *"
+  # permite rodar manualmente pela aba Actions
+  workflow_dispatch:
+  # roda também quando você altera o README
+  push:
+    branches:
+      - main
+      - master
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Gerar os SVGs da cobrinha
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-snake.svg?color_snake=FF2BD6&color_dots=#ebedf0,#d9b3ff,#b46bff,#8a2bff,#5a0fc8
+            dist/github-snake-dark.svg?color_snake=FF2BD6&color_dots=#1A0638,#4b1b8f,#7a2bd6,#ff2bd6,#ff8a1f
+
+      - name: Enviar para a branch output
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
