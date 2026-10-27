@@ -3,7 +3,7 @@ name: Gerar cobrinha
 on:
   # atualiza a cada 12 horas
   schedule:
-    - cron: "0 */12 * * *"
+    - cron: "0 */1 * * *"
   # permite rodar manualmente pela aba Actions
   workflow_dispatch:
   # roda também quando você altera o README
