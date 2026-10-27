@@ -1,9 +1,7 @@
-<!-- ===================== BANNER ===================== -->
 <div align="center">
 
 <img src="assets/banner.svg" alt="Henrique Gonzalez" width="100%" />
 
-<!-- ===================== CENA: Ryu + gerador + letreiro ===================== -->
 <img src="assets/scene.svg" alt="Ryu solta um hadouken no gerador que acende o letreiro: Fala, pessoal! Eu sou o Henrique, só mais um DEV no planeta buscando sua glória" width="100%" />
 
 </div>
