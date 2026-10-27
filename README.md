@@ -63,15 +63,8 @@
 
 <br>
 
-## Som do box
 
 <div align="center">
   <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=31fyp6eqypcrry3m3jfzuit3ourm&cover_image=true&theme=default&show_offline=false&background_color=1A0638&bar_color=FF2BD6&interchange=false&profanity=false&hide_remaster=false" alt="Tocando agora no Spotify" />
 </div>
 
-
-<div align="center">
-
-*Em breve: o que estou ouvindo no momento.*
-
-</div>
