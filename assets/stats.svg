@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 200" width="830" height="200" role="img" aria-label="Estatísticas do GitHub e linguagens mais usadas">
+<style>
+text{font-family:'Segoe UI',Ubuntu,'Helvetica Neue',Arial,sans-serif}
+.ti{font-size:18px;font-weight:700;fill:#ff2bd6}
+.lb{font-size:14px;fill:#e8d9ff}
+.vl{font-size:15px;font-weight:700;fill:#28e0ff}
+.seg{transform-origin:0 50%;transform-box:fill-box;animation:grow 1.2s ease-out both}
+@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+</style>
+<defs><clipPath id="bar"><rect x="440" y="62" width="366" height="10" rx="5"/></clipPath></defs>
+<rect x="1" y="1" width="398" height="198" rx="10" fill="#1a0638" stroke="#6a1b9a" stroke-width="1.5"/>
+<rect x="431" y="1" width="398" height="198" rx="10" fill="#1a0638" stroke="#6a1b9a" stroke-width="1.5"/>
+<text x="24" y="38" class="ti">Estatísticas do GitHub</text>
+<text x="456" y="38" class="ti">Linguagens mais usadas</text>
+<rect x="24" y="73" width="8" height="8" rx="2" fill="#ff2bd6"/>
+<text x="42" y="84" class="lb">Repositórios públicos</text>
+<text x="374" y="84" class="vl" text-anchor="end">4</text>
+<rect x="24" y="103" width="8" height="8" rx="2" fill="#28e0ff"/>
+<text x="42" y="114" class="lb">Estrelas recebidas</text>
+<text x="374" y="114" class="vl" text-anchor="end">0</text>
+<rect x="24" y="133" width="8" height="8" rx="2" fill="#ff8a1f"/>
+<text x="42" y="144" class="lb">Seguidores</text>
+<text x="374" y="144" class="vl" text-anchor="end">2</text>
+<rect x="24" y="163" width="8" height="8" rx="2" fill="#9b3dff"/>
+<text x="42" y="174" class="lb">No GitHub desde</text>
+<text x="374" y="174" class="vl" text-anchor="end">2025</text>
+<g clip-path="url(#bar)"><rect class="seg" style="animation-delay:0.00s" x="440.0" y="62" width="130.9" height="10" fill="#ff2bd6"/><rect class="seg" style="animation-delay:0.15s" x="570.9" y="62" width="96.3" height="10" fill="#28e0ff"/><rect class="seg" style="animation-delay:0.30s" x="667.1" y="62" width="78.5" height="10" fill="#ff8a1f"/><rect class="seg" style="animation-delay:0.45s" x="745.6" y="62" width="60.4" height="10" fill="#9b3dff"/></g>
+<circle cx="445" cy="97" r="5" fill="#ff2bd6"/>
+<text x="458" y="102" class="lb">JavaScript <tspan class="vl" fill="#28e0ff">35.8%</tspan></text>
+<circle cx="631" cy="97" r="5" fill="#28e0ff"/>
+<text x="644" y="102" class="lb">Python <tspan class="vl" fill="#28e0ff">26.3%</tspan></text>
+<circle cx="445" cy="125" r="5" fill="#ff8a1f"/>
+<text x="458" y="130" class="lb">HTML <tspan class="vl" fill="#28e0ff">21.4%</tspan></text>
+<circle cx="631" cy="125" r="5" fill="#9b3dff"/>
+<text x="644" y="130" class="lb">CSS <tspan class="vl" fill="#28e0ff">16.5%</tspan></text>
+</svg>
