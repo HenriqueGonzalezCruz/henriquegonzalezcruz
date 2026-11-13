@@ -21,7 +21,7 @@
 <div align="center">
 
 ![PHP](https://img.shields.io/badge/PHP-9B3DFF?style=for-the-badge&logo=php&logoColor=white)
-![Java](https://img.shields.io/badge/Java-FF8A1F?style=for-the-badge&logo=openjdk&logoColor=0D0221)
+![JavaScript](https://img.shields.io/badge/JavaScript-FF8A1F?style=for-the-badge&logo=javascript&logoColor=0D0221)
 ![SQL](https://img.shields.io/badge/SQL-28E0FF?style=for-the-badge&logo=mysql&logoColor=0D0221)
 ![Python](https://img.shields.io/badge/Python-FF2BD6?style=for-the-badge&logo=python&logoColor=white)
 ![VB.NET](https://img.shields.io/badge/VB.NET-6A1B9A?style=for-the-badge&logo=dotnet&logoColor=white)
@@ -40,8 +40,7 @@
 
 <div align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=HenriqueGonzalezCruz&show_icons=true&hide_border=false&border_color=6A1B9A&border_radius=10&bg_color=1A0638&title_color=FF2BD6&icon_color=28E0FF&text_color=E8D9FF" alt="Estatísticas do GitHub" />
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=HenriqueGonzalezCruz&layout=compact&hide_border=false&border_color=6A1B9A&border_radius=10&bg_color=1A0638&title_color=FF2BD6&text_color=E8D9FF" alt="Linguagens mais usadas" />
+<img src="assets/stats.svg" alt="Estatísticas do GitHub e linguagens mais usadas" width="100%" />
 
 <br>
 
@@ -67,4 +66,3 @@
 <div align="center">
   <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=31fyp6eqypcrry3m3jfzuit3ourm&cover_image=true&theme=default&show_offline=false&background_color=1A0638&bar_color=FF2BD6&interchange=false&profanity=false&hide_remaster=false" alt="Tocando agora no Spotify" />
 </div>
-
