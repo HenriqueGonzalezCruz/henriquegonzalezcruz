@@ -1,0 +1,131 @@
+name: Gerar cards de estatisticas
+
+on:
+  # atualiza a cada 12 horas
+  schedule:
+    - cron: "30 */12 * * *"
+  # permite rodar manualmente pela aba Actions
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  stats:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Gerar assets/stats.svg
+        env:
+          OWNER: ${{ github.repository_owner }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 - <<'PY'
+          import json, os, urllib.request
+          from html import escape
+
+          OWNER = os.environ["OWNER"]
+          TOKEN = os.environ.get("GH_TOKEN", "")
+
+          def api(path):
+              req = urllib.request.Request("https://api.github.com" + path)
+              req.add_header("Accept", "application/vnd.github+json")
+              req.add_header("User-Agent", "profile-stats")
+              if TOKEN:
+                  req.add_header("Authorization", "Bearer " + TOKEN)
+              with urllib.request.urlopen(req, timeout=30) as r:
+                  return json.load(r)
+
+          user = api(f"/users/{OWNER}")
+          repos, page = [], 1
+          while True:
+              chunk = api(f"/users/{OWNER}/repos?per_page=100&type=owner&page={page}")
+              repos += chunk
+              if len(chunk) < 100:
+                  break
+              page += 1
+
+          own = [r for r in repos if not r.get("fork")]
+          stars = sum(r.get("stargazers_count", 0) for r in own)
+          langs = {}
+          for r in own:
+              try:
+                  for name, size in api(f"/repos/{OWNER}/{r['name']}/languages").items():
+                      langs[name] = langs.get(name, 0) + size
+              except Exception:
+                  pass
+
+          total = sum(langs.values())
+          NOMES = {"Visual Basic .NET": "VB.NET"}
+          top = sorted(langs.items(), key=lambda kv: kv[1], reverse=True)[:6]
+          since = (user.get("created_at") or "")[:4] or "-"
+
+          DEEP, CARD, EDGE = "#0d0221", "#1a0638", "#6a1b9a"
+          MAGENTA, CYAN, ORANGE, VIOLET, YELLOW, PINK = "#ff2bd6", "#28e0ff", "#ff8a1f", "#9b3dff", "#ffd23f", "#ff6ec7"
+          PALETA = [MAGENTA, CYAN, ORANGE, VIOLET, YELLOW, PINK]
+          TXT = "#e8d9ff"
+
+          W, H = 830, 200
+          rows = [
+              ("Repositórios públicos", user.get("public_repos", len(own))),
+              ("Estrelas recebidas", stars),
+              ("Seguidores", user.get("followers", 0)),
+              ("No GitHub desde", since),
+          ]
+          left = []
+          for i, (label, value) in enumerate(rows):
+              y = 84 + i * 30
+              left.append(f'<rect x="24" y="{y-11}" width="8" height="8" rx="2" fill="{PALETA[i]}"/>')
+              left.append(f'<text x="42" y="{y}" class="lb">{escape(str(label))}</text>')
+              left.append(f'<text x="374" y="{y}" class="vl" text-anchor="end">{escape(str(value))}</text>')
+
+          right = []
+          BX, BY, BW, BH = 440, 62, 366, 10
+          if total > 0:
+              x = 0.0
+              for i, (name, size) in enumerate(top):
+                  w = BW * size / total
+                  right.append(f'<rect class="seg" style="animation-delay:{i*0.15:.2f}s" x="{BX+x:.1f}" y="{BY}" width="{max(w,1):.1f}" height="{BH}" fill="{PALETA[i]}"/>')
+                  x += w
+              for i, (name, size) in enumerate(top):
+                  col, row = i % 2, i // 2
+                  lx = BX + col * 186
+                  ly = 102 + row * 28
+                  pct = 100 * size / total
+                  name = NOMES.get(name, name)
+                  right.append(f'<circle cx="{lx+5}" cy="{ly-5}" r="5" fill="{PALETA[i]}"/>')
+                  right.append(f'<text x="{lx+18}" y="{ly}" class="lb">{escape(name)} <tspan class="vl" fill="{CYAN}">{pct:.1f}%</tspan></text>')
+          else:
+              right.append(f'<text x="{BX}" y="110" class="lb">Ainda sem dados de linguagens</text>')
+
+          svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="Estatísticas do GitHub e linguagens mais usadas">
+          <style>
+          text{{font-family:'Segoe UI',Ubuntu,'Helvetica Neue',Arial,sans-serif}}
+          .ti{{font-size:18px;font-weight:700;fill:{MAGENTA}}}
+          .lb{{font-size:14px;fill:{TXT}}}
+          .vl{{font-size:15px;font-weight:700;fill:{CYAN}}}
+          .seg{{transform-origin:0 50%;transform-box:fill-box;animation:grow 1.2s ease-out both}}
+          @keyframes grow{{from{{transform:scaleX(0)}}to{{transform:scaleX(1)}}}}
+          </style>
+          <defs><clipPath id="bar"><rect x="{BX}" y="{BY}" width="{BW}" height="{BH}" rx="5"/></clipPath></defs>
+          <rect x="1" y="1" width="398" height="{H-2}" rx="10" fill="{CARD}" stroke="{EDGE}" stroke-width="1.5"/>
+          <rect x="431" y="1" width="398" height="{H-2}" rx="10" fill="{CARD}" stroke="{EDGE}" stroke-width="1.5"/>
+          <text x="24" y="38" class="ti">Estatísticas do GitHub</text>
+          <text x="456" y="38" class="ti">Linguagens mais usadas</text>
+          {chr(10).join(left)}
+          <g clip-path="url(#bar)">{"".join(r for r in right if r.startswith("<rect class"))}</g>
+          {chr(10).join(r for r in right if not r.startswith("<rect class"))}
+          </svg>'''
+          os.makedirs("assets", exist_ok=True)
+          with open("assets/stats.svg", "w", encoding="utf-8") as f:
+              f.write(svg)
+          print("stats.svg gerado:", len(svg), "bytes;", len(top), "linguagens")
+          PY
+
+      - name: Salvar no repositório
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/stats.svg
+          git diff --cached --quiet || (git commit -m "atualiza cards de estatisticas" && git push)
